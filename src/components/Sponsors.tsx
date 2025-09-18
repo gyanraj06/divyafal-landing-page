@@ -1,6 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Crown, Star, Award, Gem } from "lucide-react";
+import appyTheCoachLogo from "@/assets/apply-the cocch.png";
+import coreCatalystLogo from "@/assets/corecatalyst.png";
+import dahaneLogo from "@/assets/dahana.png";
+import trippechaloLogo from "@/assets/trippechalo.png";
 
 const Sponsors = () => {
   // Mock sponsor data - in a real app, this would come from an API
@@ -155,32 +159,74 @@ const Sponsors = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <Card className="bg-luxury-gold/10 border-luxury-gold/30 border-2 hover:shadow-gold transition-luxury hover-scale">
-              <CardContent className="p-8 text-center">
-                <div className="text-6xl font-bold text-luxury-gold mb-4">
-                  DG
-                </div>
-                <h4 className="font-heading text-lg font-semibold text-luxury-black">
-                  Dahana Media Works
-                </h4>
-                <p className="font-body text-sm text-luxury-black/60 mt-2">
-                  Media Partner
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="bg-luxury-gold/10 border-luxury-gold/30 border-2 hover:shadow-gold transition-luxury hover-scale">
-              <CardContent className="p-8 text-center">
-                <div className="text-6xl font-bold text-luxury-gold mb-4">
-                  TC
-                </div>
-                <h4 className="font-heading text-lg font-semibold text-luxury-black">
-                  TripPeChalo
-                </h4>
-                <p className="font-body text-sm text-luxury-black/60 mt-2">
-                  Ticketing Partner
-                </p>
-              </CardContent>
-            </Card>
+            <div className="text-center">
+              <Card className="bg-luxury-gold/10 border-luxury-gold/30 border-2 hover:shadow-gold transition-luxury hover-scale h-32">
+                <CardContent className="p-0 h-full">
+                  <img
+                    src={dahaneLogo}
+                    alt="Dahana Media Works"
+                    className="w-full h-full object-cover rounded"
+                  />
+                </CardContent>
+              </Card>
+              <h4 className="font-heading text-lg font-semibold text-luxury-black mt-4">
+                Dahana Media Works
+              </h4>
+              <p className="font-body text-sm text-luxury-black/60 mt-1">
+                Media Partner
+              </p>
+            </div>
+            <div className="text-center">
+              <Card className="bg-luxury-gold/10 border-luxury-gold/30 border-2 hover:shadow-gold transition-luxury hover-scale h-32">
+                <CardContent className="p-0 h-full">
+                  <img
+                    src={trippechaloLogo}
+                    alt="TrippeChalo"
+                    className="w-full h-full object-cover rounded"
+                  />
+                </CardContent>
+              </Card>
+              <h4 className="font-heading text-lg font-semibold text-luxury-black mt-4">
+                TripPeChalo
+              </h4>
+              <p className="font-body text-sm text-luxury-black/60 mt-1">
+                Ticketing Partner
+              </p>
+            </div>
+            <div className="text-center">
+              <Card className="bg-luxury-gold/10 border-luxury-gold/30 border-2 hover:shadow-gold transition-luxury hover-scale h-32">
+                <CardContent className="p-0 h-full">
+                  <img
+                    src={appyTheCoachLogo}
+                    alt="Appy The Coach"
+                    className="w-full h-full object-cover rounded"
+                  />
+                </CardContent>
+              </Card>
+              <h4 className="font-heading text-lg font-semibold text-luxury-black mt-4">
+                Appy The Coach
+              </h4>
+              <p className="font-body text-sm text-luxury-black/60 mt-1">
+                Growth Partner
+              </p>
+            </div>
+            <div className="text-center">
+              <Card className="bg-luxury-gold/10 border-luxury-gold/30 border-2 hover:shadow-gold transition-luxury hover-scale h-32">
+                <CardContent className="p-0 h-full">
+                  <img
+                    src={coreCatalystLogo}
+                    alt="Core Catalyst"
+                    className="w-full h-full object-cover rounded"
+                  />
+                </CardContent>
+              </Card>
+              <h4 className="font-heading text-lg font-semibold text-luxury-black mt-4">
+                Core Catalyst
+              </h4>
+              <p className="font-body text-sm text-luxury-black/60 mt-1">
+                Growth Partner
+              </p>
+            </div>
           </div>
         </div>
 
