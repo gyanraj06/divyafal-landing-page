@@ -4,7 +4,8 @@
       "Read(//c/Users/ASUS/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/TempState/1B31A4F23C784D5B162A3066FA9AAF4F/**)",
       "Read(//c/Users/ASUS/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/TempState/03C4207FA67EE3EA4F42C748980EDA86/**)",
       "Read(//c/Users/ASUS/AppData/Local/Packages/5319275A.WhatsAppDesktop_cv1g1gvanyjgm/TempState/2E3E809D4082093C8BBF499AE9966CFC/**)",
-      "Bash(npm run dev:*)"
+      "Bash(npm run dev:*)",
+      "Bash(del \"C:\\Users\\ASUS\\Desktop\\Codes\\divyafal-landing-page\\src\\components\\Gallery.tsx\")"
     ],
     "deny": [],
     "ask": []
