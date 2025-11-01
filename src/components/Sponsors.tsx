@@ -94,7 +94,7 @@ const Sponsors = () => {
     <section id="sponsors" className="py-20 bg-luxury-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-up">
+        {/* <div className="text-center mb-16 animate-fade-up">
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-luxury-black mb-6">
             Our <span className="text-luxury-gold">Partners</span>
           </h2>
@@ -102,10 +102,10 @@ const Sponsors = () => {
             We're proud to partner with industry leaders who share our vision of
             excellence and luxury in fashion.
           </p>
-        </div>
+        </div> */}
 
         {/* Sponsor Tiers */}
-        <div className="space-y-12 mb-16">
+        {/* <div className="space-y-12 mb-16">
           {sponsorTiers.map((tierConfig) => {
             const tierSponsors = getSponsorsByTier(tierConfig.tier);
             if (tierSponsors.length === 0) return null;
@@ -145,7 +145,7 @@ const Sponsors = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
 
         {/* Partners */}
         <div className="mb-16 animate-fade-up">

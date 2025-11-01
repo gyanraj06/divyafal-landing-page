@@ -86,12 +86,18 @@ const Navbar = () => {
               </a>
             ))}
             <div className="px-3 py-2">
-              <Button
-                className="w-full border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-luxury-black"
-                variant="outline"
+              <a
+                href="https://trippechalo.in/booking/event/93359094-8380-4c96-b834-285669a68ea4"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Register Now
-              </Button>
+                <Button
+                  className="w-full border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-luxury-black"
+                  variant="outline"
+                >
+                  Register Now
+                </Button>
+              </a>
             </div>
           </div>
         </div>

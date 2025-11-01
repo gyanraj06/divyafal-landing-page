@@ -1,6 +1,7 @@
 import { useEffect, useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-fashion-show.jpg";
 
 const Hero = () => {
@@ -104,21 +105,30 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="flex justify-center">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-  href="https://trippechalo.in/booking/event/93359094-8380-4c96-b834-285669a68ea4"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <Button
-    size="lg"
-    className="bg-luxury-gold text-luxury-black hover:bg-luxury-gold-light transition-luxury font-semibold px-8 py-3"
-  >
-    Register for Auditions
-  </Button>
-</a>
+              href="https://trippechalo.in/booking/event/93359094-8380-4c96-b834-285669a68ea4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                className="bg-luxury-gold text-luxury-black hover:bg-luxury-gold-light transition-luxury font-semibold px-8 py-3"
+              >
+                Register for Auditions
+              </Button>
+            </a>
 
+            <Link to="/visitor-pass">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-luxury-black transition-luxury font-semibold px-8 py-3"
+              >
+                Get Visitor Pass
+              </Button>
+            </Link>
           </div>
 
         </div>
