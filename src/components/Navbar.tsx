@@ -1,14 +1,17 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Sponsors", href: "#sponsors" },
+    { name: "Home", href: "/#home" },
+    { name: "About", href: "/#about" },
+    { name: "Sponsors", href: "/#sponsors" },
+    { name: "Highlights", href: "/highlights" },
   ];
 
   return (
@@ -16,23 +19,24 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <Link to="/" className="flex-shrink-0">
             <h1 className="font-heading text-2xl font-bold text-luxury-gold">
               Divyafal
             </h1>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
-                  className="text-luxury-white hover-gold font-body font-medium transition-luxury px-3 py-2 text-sm"
+                  to={item.href}
+                  className={`text-luxury-white hover-gold font-body font-medium transition-luxury px-3 py-2 text-sm ${location.pathname === item.href ? "text-luxury-gold" : ""
+                    }`}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -76,14 +80,15 @@ const Navbar = () => {
         <div className="md:hidden bg-luxury-black/98 backdrop-blur-sm border-t border-luxury-gold/20">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
-                className="text-luxury-white hover-gold block px-3 py-2 text-base font-medium transition-luxury"
+                to={item.href}
+                className={`text-luxury-white hover-gold block px-3 py-2 text-base font-medium transition-luxury ${location.pathname === item.href ? "text-luxury-gold" : ""
+                  }`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
             <div className="px-3 py-2">
               <a
