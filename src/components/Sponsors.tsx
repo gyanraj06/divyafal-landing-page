@@ -22,6 +22,7 @@ const Sponsors = () => {
   const sponsorTiers = [
     {
       tier: "Platinum",
+      price: "₹1,50,000+",
       icon: <Gem className="h-8 w-8" />,
       color: "text-luxury-gold",
       bgColor: "bg-luxury-gold/10",
@@ -39,6 +40,7 @@ const Sponsors = () => {
     },
     {
       tier: "Gold",
+      price: "₹1,00,000+",
       icon: <Crown className="h-8 w-8" />,
       color: "text-yellow-500",
       bgColor: "bg-yellow-500/10",
@@ -55,6 +57,7 @@ const Sponsors = () => {
     },
     {
       tier: "Silver",
+      price: "₹50,000+",
       icon: <Star className="h-8 w-8" />,
       color: "text-gray-400",
       bgColor: "bg-gray-400/10",
@@ -69,6 +72,7 @@ const Sponsors = () => {
     },
     {
       tier: "Bronze",
+      price: "₹25,000+",
       icon: <Award className="h-8 w-8" />,
       color: "text-orange-600",
       bgColor: "bg-orange-600/10",
@@ -249,14 +253,17 @@ const Sponsors = () => {
                 key={tier.tier}
                 className={`${tier.bgColor} ${tier.borderColor} border`}
               >
-                <CardContent className="p-6">
+                <CardContent className="p-6 flex flex-col h-full">
                   <div className={`${tier.color} mb-4 flex justify-center`}>
                     {tier.icon}
                   </div>
-                  <h4 className="font-heading text-xl font-bold text-luxury-white text-center mb-4">
+                  <h4 className="font-heading text-xl font-bold text-luxury-white text-center mb-1">
                     {tier.tier}
                   </h4>
-                  <ul className="space-y-2 text-sm text-luxury-white/80">
+                  <p className={`${tier.color} text-center font-bold text-lg mb-4`}>
+                    {tier.price}
+                  </p>
+                  <ul className="space-y-2 text-sm text-luxury-white/80 flex-grow">
                     {tier.benefits.map((benefit, index) => (
                       <li key={index} className="flex items-start gap-2">
                         <span className={`${tier.color} text-xs mt-1`}>•</span>
